@@ -45,6 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h3, h4, h5, h6 { margin-top: .8em; }
 
+/* custom fixes */
 img {
     max-width: 100%;
     box-shadow: 0 0 5px #0f0f0f;
@@ -52,6 +53,10 @@ img {
 
 .codehilite {
     background-color: inherit !important;
+}
+
+pre span {
+    border: none !important;
 }
 
 /* Anchors */
