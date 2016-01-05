@@ -19,7 +19,8 @@
 
 <body id="index" class="home">
     <header id="banner" class="body">
-            <nav>
+        <nav>
+          <div id="menu">
             <a href="{{ SITEURL }}/">{{ SITENAME }}</a> |
             {% for title, link in MENUITEMS %}
                 <a href="{{ link }}">{{ title }}</a>
@@ -33,9 +34,10 @@
             {% for cat, null in categories %}
                 <a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
             {% endfor %}
-            <a href="{{ FEED_DOMAIN }}/{{FEED_ALL_RSS }}">RSS</a>
             {% endif %}
-            </nav>
+            <a href="{{ FEED_DOMAIN }}/{{FEED_ALL_RSS }}">RSS</a>
+          </div>
+        </nav>
     </header><!-- /#banner -->
     {% block content %}
     {% endblock %}
