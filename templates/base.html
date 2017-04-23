@@ -26,7 +26,7 @@
                 <a href="{{ link }}">{{ title }}</a>
             {% endfor %}
             {% if DISPLAY_PAGES_ON_MENU -%}
-            {% for pg in PAGES %}
+            {% for pg in pages %}
                 <a href="{{ SITEURL }}/{{ pg.url }}">{{ pg.title }}</a>
             {% endfor %}
             {% endif %}
